@@ -1,0 +1,18 @@
+<h2>Contenido de la Ventana Divisa</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Moneda</th>
+            <th>Tasa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (const currency in rates) { %>
+            <tr>
+                <td><%= currency %></td>
+                <td><%= rates[currency] %></td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
